@@ -1,3 +1,0 @@
-[submodule "web/lib"]
-	path = web/lib
-	url = https://github.com/tenogy/t-js.git
