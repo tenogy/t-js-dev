@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	@RenderSection("css", required: false)
+</head>
+<body class="@ViewBag.PageClass">
+<header></header>
+<main role="main" id="main">
+	@RenderBody()
+</main>
+<footer></footer>
+	@RenderSection("scripts", required: false)
+	<script type="text/javascript">
+		(function() {
+			ko.validation.init({
+				errorElementClass: "has-error",
+				errorMessageClass: "help-block",
+				decorateElement: true,
+				insertMessages: false
+			});
+		})();
+	</script>
+</body>
+</html>

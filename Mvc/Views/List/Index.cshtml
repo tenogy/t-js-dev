@@ -1,0 +1,69 @@
+﻿@using Mvc.Models
+@using Tjs.Web
+@{
+	ViewBag.Title = "Test list";
+	ViewBag.PageClass = "content-page";
+}
+
+<div id="devListPage" class="page-content">
+	<h1>Test list</h1>
+	<div class="content-block">
+		<div class="filter-zone">
+			<div class="btn-group" data-toggle="buttons">
+				<label class="btn btn-primary active" data-bind="click: changeMode.bind($data, 'simple')">
+					<input type="radio" name="options" autocomplete="off" checked> Simple
+				</label>
+				<label class="btn btn-primary" data-bind="click: changeMode.bind($data, 'empty')">
+					<input type="radio" name="options" autocomplete="off"> Empty
+				</label>
+				<label class="btn btn-primary" data-bind="click: changeMode.bind($data, 'long')">
+					<input type="radio" name="options" autocomplete="off"> Long operation
+				</label>
+				<label class="btn btn-primary" data-bind="click: changeMode.bind($data, 'top5')">
+					<input type="radio" name="options" autocomplete="off"> TOP 5
+				</label>
+				<label class="btn btn-primary" data-bind="click: changeMode.bind($data, 'error')">
+					<input type="radio" name="options" autocomplete="off"> Error
+				</label>
+			</div>
+			<div class="page-size-selector">
+				<span>Page size</span>
+				<input type="number" class="page-size" data-bind="textInput: pageSize" />
+				<input type="button" class="btn btn-primary btn-sm" value="Apply" data-bind="click: loadList" />
+			</div>
+		</div>
+		<div class="list-holder" data-bind="css:{'list-is-empty': listIsEmpty(), 'no-items': noItems()}">
+			<loading-progress params="controller: loadingProgress"></loading-progress>
+			<list-with-server-html params="list: list" data-bind="visible: listIsVisible()"></list-with-server-html>
+			<div class="empty-list">No items found.</div>
+		</div>
+	</div>
+</div>
+
+
+@section css {
+	
+}
+
+@section scripts {
+	<script type="text/javascript">
+		require(["dist/app/manufacturers/list"], function (m) {
+			var config = @Html.ToJson(new
+			{
+				services = new
+				{
+					getList = Url.Action("GetList")
+				},
+				sortTypes = new
+				{
+					byString = ListSortType.ByString,
+					byDate = ListSortType.ByDate
+				}
+			});
+
+			ko.applyBindings(new m.List(config), $("#devListPage")[0]);
+		});
+	</script>
+}
+
+
