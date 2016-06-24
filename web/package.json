@@ -1,0 +1,10 @@
+{
+	"name": "tjs-web",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"author": "Yuriy Korpachan",
+	"devDependencies": {
+		"gulp": "^3.9.1"
+	}
+}
