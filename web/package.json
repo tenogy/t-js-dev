@@ -6,5 +6,15 @@
 	"author": "Yuriy Korpachan",
 	"devDependencies": {
 		"gulp": "^3.9.1"
+	},
+	"dependencies": {
+		"@types/jquery": "^1.10.21-alpha",
+		"@types/knockout": "^3.2.22-alpha",
+		"@types/rx": "^2.5.21-alpha",
+		"@types/spin": "^2.3.20-alpha",
+		"jquery": "^3.0.0",
+		"knockout": "^3.4.0",
+		"rx": "^4.1.0",
+		"spin.js": "^2.3.2"
 	}
 }

@@ -5,7 +5,7 @@
 	ViewBag.PageClass = "content-page";
 }
 
-<div id="devListPage" class="page-content">
+<div id="listPage" class="page-content">
 	<h1>Test list</h1>
 	<div class="content-block">
 		<div class="filter-zone">
@@ -47,7 +47,7 @@
 
 @section scripts {
 	<script type="text/javascript">
-		require(["dist/app/manufacturers/list"], function (m) {
+		require(["content/list/main"], function (m) {
 			var config = @Html.ToJson(new
 			{
 				services = new
@@ -61,7 +61,7 @@
 				}
 			});
 
-			ko.applyBindings(new m.List(config), $("#devListPage")[0]);
+			ko.applyBindings(new m.List(config), $("#listPage")[0]);
 		});
 	</script>
 }
