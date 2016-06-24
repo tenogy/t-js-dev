@@ -47,7 +47,7 @@
 
 @section scripts {
 	<script type="text/javascript">
-		require(["content/list/main"], function (m) {
+		@*requirejs(["content/list/main"], function (m) {
 			var config = @Html.ToJson(new
 			{
 				services = new
@@ -62,7 +62,7 @@
 			});
 
 			ko.applyBindings(new m.List(config), $("#listPage")[0]);
-		});
+		});*@
 	</script>
 }
 

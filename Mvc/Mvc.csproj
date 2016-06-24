@@ -141,6 +141,7 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="gulpfile.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -177,6 +178,7 @@
     <TypeScriptCompile Include="src\index.d.ts" />
     <TypeScriptCompile Include="src\list\listItem.ts" />
     <TypeScriptCompile Include="src\list\main.ts" />
+    <Content Include="src\require-config.js" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
