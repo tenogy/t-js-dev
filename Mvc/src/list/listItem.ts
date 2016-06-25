@@ -1,4 +1,4 @@
-﻿import {computed, registerComputed, dateFromModel} from "./../container";
+﻿import {computed, registerComputed, dateFromModel} from "tenogy";
 
 @registerComputed
 export class ListItem {

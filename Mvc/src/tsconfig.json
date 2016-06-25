@@ -6,13 +6,13 @@
 		"sourceMap": true,
 		"target": "es5",
 		"module": "amd",
-		"outDir": "./../build",
+		"outFile": "./../content/js/list/main.js",
 		"experimentalDecorators": true,
-		"emitDecoratorMetadata": true
+		"emitDecoratorMetadata": true,
+		"pretty": true
 	},
 	"files": [
 		"index.d.ts",
-		"container.ts",
 		"list/main.ts"
 	],
 	"compileOnSave": true

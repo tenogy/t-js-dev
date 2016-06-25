@@ -46,8 +46,10 @@
 }
 
 @section scripts {
+	<script src="@Url.Content("~/content/js/list/main.js")" type="text/javascript"></script>
+
 	<script type="text/javascript">
-		@*requirejs(["content/list/main"], function (m) {
+		requirejs(["main"], function (m) {
 			var config = @Html.ToJson(new
 			{
 				services = new
@@ -62,7 +64,7 @@
 			});
 
 			ko.applyBindings(new m.List(config), $("#listPage")[0]);
-		});*@
+		});
 	</script>
 }
 
