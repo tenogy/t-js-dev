@@ -3,17 +3,14 @@
 		"noImplicitAny": false,
 		"noEmitOnError": true,
 		"removeComments": true,
-		"sourceMap": true,
+		"sourceMap": false,
 		"target": "es5",
-		"module": "amd",
-		"outFile": "./../content/js/list/main.js",
+		"module": "commonjs",
+		"moduleResolution": "classic",
 		"experimentalDecorators": true,
 		"emitDecoratorMetadata": true,
-		"pretty": true
+		"pretty": true,
+		"outDir": "./../.build/"
 	},
-	"files": [
-		"index.d.ts",
-		"list/main.ts"
-	],
-	"compileOnSave": true
+	"compileOnSave": false
 }

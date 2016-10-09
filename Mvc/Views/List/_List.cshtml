@@ -4,42 +4,26 @@
 	<div class="list-body">
 		<div class="list-item list-items-header">
 			<div class="name">
-				<span>Domain</span>
+				<span>String item</span>
 				<!-- ko if: sortRule -->
-				<div data-bind="visible: sortRule, tableSort: sortRule, sortType: sortTypes.byName, parentController: 'div'"></div>
+				<div data-bind="visible: sortRule, sort: sortRule, sortType: sortTypes.byString, parentController: 'div'"></div>
 				<!-- /ko -->
 			</div>
 			<div class="date">
-				<span>Expires</span>
+				<span>Date item</span>
 				<!-- ko if: sortRule -->
-				<div data-bind="visible: sortRule, tableSort: sortRule, sortType: sortTypes.byExpireDate, parentController: 'div'"></div>
+				<div data-bind="visible: sortRule, sort: sortRule, sortType: sortTypes.byDate, parentController: 'div'"></div>
 				<!-- /ko -->
 			</div>
-			<div class="date">
-				<span>Created</span>
-				<!-- ko if: sortRule -->
-				<div data-bind="visible: sortRule, tableSort: sortRule, sortType: sortTypes.byCreatedDate, parentController: 'div'"></div>
-				<!-- /ko -->
+			<div class="not-sort">
+				<span>Not sortable</span>
 			</div>
-			@*<div class="date">
-					<span>Updated</span>
-					<!-- ko if: sortRule -->
-					<div data-bind="visible: sortRule, tableSort: sortRule, sortType: sortTypes.byUpdatedDate, parentController: 'div'"></div>
-					<!-- /ko -->
-				</div>*@
-			<div class="status">Status</div>
-			<div class="actions"></div>
 		</div>
 		<!-- ko foreach: $data -->
-		<div class="list-item list-item-body">
-			<div class="name"><a href="#" target="_blank" data-bind="text:name, attr:{href:domainUrl}"></a><i class="icon icon-ex-link"></i></div>
-			<div class="date" data-bind="text:expirationDate"></div>
-			<div class="date" data-bind="text:createdDate"></div>
-			@*<div class="date" data-bind="text:updatedDate"></div>*@
-			<div class="status">Active</div>
-			<div class="actions">
-				<input type="button" class="btn btn-primary" value="Manage" />
-			</div>
+		<div class="list-item">
+			<div class="name" data-bind="text:stringItem"></div>
+			<div class="date" data-bind="text:dateFormatted"></div>
+			<div class="not-sort" data-bind="text:stringItem"></div>
 		</div>
 		<!-- /ko -->
 	</div>

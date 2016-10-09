@@ -1,6 +1,5 @@
-﻿import {ListItem} from "listItem"
-import {AlertMessage, LoadingProgress, AjaxServices, ListWithServerHtml, registerComputed, computed, SortRule,
-	SortDirection} from "tenogy"
+﻿import { ListItem } from "./listItem"
+import { AlertMessage, LoadingProgress, AjaxServices, ListWithServerHtml, registerComputed, computed, SortRule, SortDirection } from "tenogy"
 
 @registerComputed
 export class List {
@@ -13,7 +12,7 @@ export class List {
 		this.list = ko.observable();
 		this.loadingProgress = new LoadingProgress();
 		this.sortRule = new SortRule(this.sortTypes.byDate, SortDirection.desc);
-		this.sortRule.subscribe(() => this.loadList(1), this);
+		this.sortRule.subscribe(() => this.loadList(1));
 		this.mode = ko.observable(null);
 		this.pageSize = ko.observable(10);
 
@@ -67,7 +66,7 @@ export class List {
 
 		if (response == null) {
 			this.list(null);
-			alert("Error");
+			window.alert((<any>window).__SystemError__);
 			return;
 		}
 

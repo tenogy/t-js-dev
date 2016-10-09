@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="@Url.Content("~/node_modules/bootstrap/dist/css/bootstrap.css")" rel="stylesheet" />
+	<link href="@Url.Content("~/src/site.css")" rel="stylesheet" />
 	@RenderSection("css", required: false)
 </head>
 <body class="@ViewBag.PageClass">
@@ -11,17 +13,24 @@
 	@RenderBody()
 </main>
 <footer></footer>
-	<script src="@Url.Content("~/content/js/common.js")" type="text/javascript"></script>
+@*<script src="@Url.Content("~/content/js/common.js")" type="text/javascript"></script>*@
+<script src="@Url.Content("~/node_modules/jquery/dist/jquery.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/node_modules/knockout/build/output/knockout-latest.debug.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/node_modules/knockout.validation/dist/knockout.validation.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/node_modules/rx/dist/rx.lite.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/node_modules/spin.js/spin.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/node_modules/tenogy/dist/tenogy.js")" type="text/javascript"></script>
 	@RenderSection("scripts", required: false)
-	<script type="text/javascript">
-		(function() {
-			ko.validation.init({
-				errorElementClass: "has-error",
-				errorMessageClass: "help-block",
-				decorateElement: true,
-				insertMessages: false
-			});
-		})();
-	</script>
+<script type="text/javascript">
+	window.__SystemError__ = "System error. Please, try later.";
+	(function() {
+		ko.validation.init({
+			errorElementClass: "has-error",
+			errorMessageClass: "help-block",
+			decorateElement: true,
+			insertMessages: false
+		});
+	})();
+</script>
 </body>
 </html>

@@ -1,0 +1,156 @@
+﻿.list .list-header {
+	padding: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 1px solid #eee;
+}
+
+.list .list-body {
+	display: table;
+	width: 100%;
+}
+
+.list .list-item {
+	display: table-row;
+}
+
+.list .list-items-header {
+	font-weight: bold;
+}
+
+.list-item > div {
+	display: table-cell;
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+.empty-list {
+	background-color: #f4f3bf;
+	padding: 20px;
+	font-size: 16px;
+}
+
+/*======================================================================================
+	SortDirection.
+========================================================================================*/
+.list .arrow-asc {
+	margin: 3px;
+	width: 0;
+	height: 0;
+	display: block;
+	border-top: 4px solid #252525;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+}
+
+.list .arrow-desc {
+	margin: 3px;
+	width: 0;
+	height: 0;
+	display: block;
+	border-bottom: 4px solid #252525;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+}
+
+.list .sort-desc .arrow-asc,
+.list .sort-none .arrow-asc {
+	display: none;
+}
+
+.list .sort-asc .arrow-desc {
+	display: none;
+}
+
+.list .sort-none .arrow-desc {
+	visibility: hidden;
+}
+
+.list .sort-asc .arrow-asc {
+	margin-top: 5px;
+}
+
+.list .sort-desc .arrow-desc {
+	margin-top: 5px;
+}
+
+.list .sort-none,
+.list .sort-asc,
+.list .sort-desc {
+	cursor: pointer;
+}
+
+.list .sort-none span,
+.list .sort-asc span,
+.list .sort-desc span {
+	border-bottom: 1px dashed #252525;
+}
+
+.list .sort-none, .sort-none,
+.list .sort-asc, .sort-asc,
+.list .sort-desc, .sort-desc {
+	position: relative;
+}
+
+.list .sort-none > div, .sort-none > div,
+.list .sort-asc > div, .sort-asc > div,
+.list .sort-desc > div, .sort-desc > div {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.list-holder .list-paging {
+	margin-top: 20px;
+}
+
+.list-holder .loading-progress {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	cursor: auto;
+	top: 0;
+	left: 0;
+	z-index: 15;
+	background-color: transparent;
+	text-align: center;
+}
+
+.list-holder .spinner-container {
+	height: 80px;
+	margin: 80px 0 0 80px;
+	width: 80px;
+	position: relative;
+	display: inline-block;
+}
+
+.list-holder {
+	position: relative;
+	min-height: 476px;
+}
+
+.list-holder .empty-list {
+	display: none;
+}
+
+.list-holder.list-is-empty .empty-list {
+	display: block;
+}
+
+.list-holder.no-items .loading-progress {
+	background-color: transparent;
+}
+
+.list-holder .list {
+	min-height: 424px;
+}
+
+
+#main {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.page-size-selector {
+	float: right;
+}
