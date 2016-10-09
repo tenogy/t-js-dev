@@ -17,7 +17,7 @@
 	},
 
 	output: {
-		path: __dirname + "/content/js/",
+		path: __dirname + "/content/app/",
 		filename: "[name].js",
 		libraryTarget: "umd",
 		library: ["_app_", "[name]"]
