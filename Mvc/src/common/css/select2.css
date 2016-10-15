@@ -1,0 +1,125 @@
+﻿.select2-container .select2-choice .select2-arrow b {
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%228%22%20height%3D%225%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%20%3Cg%3E%0A%20%20%3Ctitle%3ELayer%201%3C/title%3E%0A%20%20%3Cg%20id%3D%22svg_43%22%3E%0A%20%20%20%3Crect%20id%3D%22svg_44%22%20height%3D%225.481%22%20width%3D%221.124%22%20fill%3D%22%23FFFFFF%22%20transform%3D%22matrix%280.7071%2C-0.7071%2C0.7071%2C0.7071%2C74.9211%2C266.8906%29%20%22%20y%3D%22-240.88676%22%20x%3D%22135.26256%22/%3E%0A%20%20%20%3Crect%20id%3D%22svg_45%22%20height%3D%225.481%22%20width%3D%221.124%22%20fill%3D%22%23FFFFFF%22%20transform%3D%22matrix%28-0.7071%2C-0.7071%2C0.7071%2C-0.7071%2C588.632%2C329.8345%29%20%22%20y%3D%22-183.53444%22%20x%3D%22643.21876%22/%3E%0A%20%20%3C/g%3E%0A%20%3C/g%3E%0A%3C/svg%3E');
+}
+
+
+.select2-container--app .select2-selection--single {
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 2px;
+	color: #252525;
+}
+
+	.select2-container--app .select2-selection--single .select2-selection__rendered {
+		color: #252525;
+		padding-top: 5px;
+		padding-left: 9px;
+		padding-right: 24px;
+	}
+
+	.select2-container--app .select2-selection--single .select2-selection__clear {
+		cursor: pointer;
+		float: right;
+		font-weight: bold;
+	}
+
+	.select2-container--app .select2-selection--single .select2-selection__placeholder {
+		color: #999;
+	}
+
+	.select2-container--app .select2-selection--single .select2-selection__arrow {
+		border-width: 0px;
+		background-image: none;
+		background-color: #7a7a7a;
+		color: #fff;
+		top: 4px;
+		right: 4px;
+		height: 20px;
+		width: 20px;
+		border-radius: 2px;
+		position: absolute;
+	}
+
+
+		.select2-container--app .select2-selection--single .select2-selection__arrow b {
+			position: relative;
+			margin: 8px 6px 6px 6px;
+			display: inline-block;
+			width: 8px;
+			height: 6px;
+			background-repeat: no-repeat;
+			background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%228%22%20height%3D%225%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%20%3Cg%3E%0A%20%20%3Ctitle%3ELayer%201%3C/title%3E%0A%20%20%3Cg%20id%3D%22svg_43%22%3E%0A%20%20%20%3Crect%20id%3D%22svg_44%22%20height%3D%225.481%22%20width%3D%221.124%22%20fill%3D%22%23FFFFFF%22%20transform%3D%22matrix%280.7071%2C-0.7071%2C0.7071%2C0.7071%2C74.9211%2C266.8906%29%20%22%20y%3D%22-240.88676%22%20x%3D%22135.26256%22/%3E%0A%20%20%20%3Crect%20id%3D%22svg_45%22%20height%3D%225.481%22%20width%3D%221.124%22%20fill%3D%22%23FFFFFF%22%20transform%3D%22matrix%28-0.7071%2C-0.7071%2C0.7071%2C-0.7071%2C588.632%2C329.8345%29%20%22%20y%3D%22-183.53444%22%20x%3D%22643.21876%22/%3E%0A%20%20%3C/g%3E%0A%20%3C/g%3E%0A%3C/svg%3E');
+		}
+
+
+.select2-container--app.select2-container--disabled .select2-selection--single {
+	background-color: #eee;
+	cursor: default;
+}
+
+	.select2-container--app.select2-container--disabled .select2-selection--single .select2-selection__clear {
+		display: none;
+	}
+
+.select2-container--app.select2-container--open .select2-selection--single .select2-selection__arrow b {
+	border-color: transparent transparent #888 transparent;
+	border-width: 0 4px 5px 4px;
+}
+
+.select2-container--app.select2-container--disabled .select2-selection__choice__remove {
+	display: none;
+}
+
+.select2-container--app.select2-container--open.select2-container--above .select2-selection--single {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.select2-container--app.select2-container--open.select2-container--below .select2-selection--single {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.select2-container--app .select2-search--dropdown .select2-search__field {
+	border: 1px solid #aaa;
+}
+
+.select2-container--app .select2-search--inline .select2-search__field {
+	background: transparent;
+	border: none;
+	outline: 0;
+	box-shadow: none;
+	-webkit-appearance: textfield;
+}
+
+.select2-container--app .select2-results > .select2-results__options {
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.select2-container--app .select2-results__option[role=group] {
+	padding: 0;
+}
+
+.select2-container--app .select2-results__option[aria-disabled=true] {
+	color: #999;
+}
+
+.select2-container--app .select2-results__option[aria-selected=true] {
+	background-color: #ddd;
+}
+
+.select2-container--app .select2-results__option--highlighted[aria-selected] {
+	background-color: #f5f5f5;
+	color: #252525;
+}
+
+.select2-container--app .select2-results__group {
+	cursor: default;
+	display: block;
+	padding: 6px;
+}
+
+.select2-container--app .select2-dropdown {
+	border: 0;
+}

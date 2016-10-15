@@ -1,6 +1,7 @@
 ﻿module.exports = {
 	entry: {
-		"list/main": __dirname + "/src/list/main.ts"
+		"list/main": __dirname + "/src/list/main.ts",
+		"select2/main": __dirname + "/src/select2/main.ts"
 	},
 
 	//devtool: "source-map",

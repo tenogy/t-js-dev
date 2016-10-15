@@ -130,15 +130,18 @@
     <Compile Include="Common\Web\HtmlHelperExtentions.cs" />
     <Compile Include="Common\Web\ViewHelper.cs" />
     <Compile Include="Controllers\ListController.cs" />
+    <Compile Include="Controllers\Select2Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Common\Web\DateTimeViewModel.cs" />
     <Compile Include="Models\ListModels.cs" />
+    <Compile Include="Models\Select2Model.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="src\select2\css\select2.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="gulpfile.js" />
@@ -179,9 +182,13 @@
     <TypeScriptCompile Include="src\index.d.ts" />
     <TypeScriptCompile Include="src\list\listItem.ts" />
     <TypeScriptCompile Include="src\list\main.ts" />
+    <TypeScriptCompile Include="src\select2\main.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Select2\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

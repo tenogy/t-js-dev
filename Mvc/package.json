@@ -1,22 +1,23 @@
 {
-	"version": "1.0.0",
-	"name": "asp.net",
-	"private": true,
-	"devDependencies": {
-		"almond": "^0.3.2",
-		"del": "2.2.0",
-		"gulp": "^3.9.0",
-		"json-loader": "^0.5.4",
-		"ts-loader": "^0.9.0",
-		"typescript": "^2.0.3",
-		"webpack": "^1.13.2"
-	},
-	"dependencies": {
-		"@types/jquery": "^2.0.32",
-		"knockout.validation": "^2.0.3",
-		"tenogy": "^0.1.1"
-	},
-	"scripts": {
-		"build": "gulp && webpack"
-	}
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "devDependencies": {
+    "almond": "^0.3.2",
+    "del": "2.2.0",
+    "gulp": "^3.9.0",
+    "json-loader": "^0.5.4",
+    "ts-loader": "^0.9.0",
+    "typescript": "^2.0.3",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "@types/jquery": "^2.0.32",
+    "knockout.validation": "^2.0.3",
+    "select2": "^4.0.3",
+    "tenogy": "^0.1.2"
+  },
+  "scripts": {
+    "build": "gulp && webpack"
+  }
 }
