@@ -1,7 +1,9 @@
-﻿module.exports = {
+﻿var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+module.exports = {
 	entry: {
-		"list/main": __dirname + "/src/list/main.ts",
-		"select2/main": __dirname + "/src/select2/main.ts"
+		"list": __dirname + "/.client_src/app/list/main.ts",
+		"select2": __dirname + "/.client_src/app/select2/main.ts"
 	},
 
 	//devtool: "source-map",
@@ -18,11 +20,12 @@
 	},
 
 	output: {
-		path: __dirname + "/content/app/",
+		path: __dirname + "/static/js/",
 		filename: "[name].js",
 		libraryTarget: "umd",
 		library: ["_app_", "[name]"]
 	},
+
 	externals: {
 		"tenogy": "tenogy"
 	}

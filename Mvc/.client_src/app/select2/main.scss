@@ -1,0 +1,10 @@
+﻿@import "../../common/css/_variables.scss";
+
+.page-content{
+	margin-top: 15px;
+
+	.content-block{
+		padding: 15px;
+		background: $primary-border-color;
+	}
+}

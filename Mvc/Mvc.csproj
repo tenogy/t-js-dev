@@ -141,11 +141,21 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="src\select2\css\select2.css" />
+    <None Include=".client_src\common\css\select2.scss" />
+    <Content Include=".gulp\bundle.js" />
+    <Content Include=".gulp\config.js" />
+    <Content Include=".gulp\tasks\app.js" />
+    <Content Include=".gulp\tasks\clean.js" />
+    <Content Include=".gulp\tasks\default.js" />
+    <Content Include=".gulp\tasks\lib.js" />
+    <Content Include=".client_src\common\css\normalize\_import-now.scss" />
+    <Content Include=".client_src\common\css\normalize\_normalize-mixin.scss" />
+    <Content Include=".client_src\common\css\normalize\_variables.scss" />
+    <Content Include=".client_src\common\css\normalize\_vertical-rhythm.scss" />
+    <None Include=".client_src\common\css\site.scss" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="gulpfile.js" />
-    <Content Include="src\site.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -159,10 +169,12 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\List\Index.cshtml" />
     <Content Include="webpack.config.js" />
+    <Content Include=".client_src\common\css\_variables.scss" />
+    <Content Include=".client_src\common\css\_normalize.scss" />
+    <Content Include=".client_src\common\css\_support-for.scss" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="content\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
@@ -176,19 +188,22 @@
     <Content Include="package.json" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="src\tsconfig.json" />
+    <Content Include=".client_src\tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="src\index.d.ts" />
-    <TypeScriptCompile Include="src\list\listItem.ts" />
-    <TypeScriptCompile Include="src\list\main.ts" />
-    <TypeScriptCompile Include="src\select2\main.ts" />
+    <TypeScriptCompile Include=".client_src\index.d.ts" />
+    <TypeScriptCompile Include=".client_src\app\list\listItem.ts" />
+    <TypeScriptCompile Include=".client_src\app\list\main.ts" />
+    <TypeScriptCompile Include=".client_src\app\select2\main.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Select2\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".client_src\app\select2\main.scss" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

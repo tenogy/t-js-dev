@@ -243,5 +243,5 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
-/Mvc/content
+/Mvc/static
 /Mvc/.build
