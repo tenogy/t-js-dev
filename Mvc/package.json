@@ -23,9 +23,7 @@
   },
   "dependencies": {
     "@types/jquery": "^2.0.32",
-    "install": "^0.8.1",
     "knockout.validation": "^2.0.3",
-    "npm": "^3.10.8",
     "select2": "^4.0.3",
     "tenogy": "^0.1.2"
   },
