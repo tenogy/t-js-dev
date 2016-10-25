@@ -8,13 +8,18 @@
 <div id="select2Page" class="page-content">
 	<h1>Test select2</h1>
 	<div class="content-block">
-		<select class="form-control" data-bind="select2: selectedItem,
+		<div class="row">
+			<div class="col-sm-12">
+				<select class="form-control" data-bind="select2: selectedItem,
 			'selections': select2Data,
 			'selectionsValue': 'value',
 			'selectionsText': 'name',
 			'allowClear': true,
 			'autocomplete': true,
 			'placeholder': 'Choose item'"></select>
+			</div>
+		</div>
+		
 	</div>
 </div>
 
