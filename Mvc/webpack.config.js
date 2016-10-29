@@ -1,6 +1,4 @@
-﻿var ExtractTextPlugin = require("extract-text-webpack-plugin");
-
-module.exports = {
+﻿module.exports = {
 	entry: {
 		"list": __dirname + "/.client_src/app/list/main.ts",
 		"select2": __dirname + "/.client_src/app/select2/main.ts"
